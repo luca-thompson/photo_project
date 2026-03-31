@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Tiempos';
+  src: url("tiempos.woff2") format("woff2");
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+  height: 98vh;
+  width: auto
+}
+.container img {
+  object-fit: contain;
+
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+#imgText {
+  position: absolute;
+  font-size: 50px;
+  font-family: 'Tiempos';
+  align-self: flex-start;
+
+
+}
+
+#imgMark{
+    color: #252525;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
