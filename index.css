@@ -11,10 +11,14 @@
 
 #letterGallery a{
     font-family: 'Tiempos';
-    text-decoration: none;
+    text-decoration: underline;
+    color: black;
     border: solid;
+
     border-width: 1px;
     border-color: black;
-    font-size: 100px;
+    font-size: 300px;
+
+    background-color: yellow;
 
 }

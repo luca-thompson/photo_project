@@ -2,7 +2,7 @@ async function loadImages(){
 
     const letter = location.href.split('=')[1]
 
-    document.getElementById("letterLabel").textContent += letter.toUpperCase();
+    document.getElementById("letterLabel").textContent = letter
 
     const response = await fetch('/media/' + letter +  '/manifest.json');
     const filenames = await response.json();
