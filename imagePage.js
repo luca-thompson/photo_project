@@ -1,4 +1,5 @@
 function setPage(){
-    document.getElementById("main").src=("/assets/" + location.href.split('=')[1] + ".jpg")
-    document.getElementById("imgMark").textContent=location.href.split('=')[1]
+    const fname = location.href.split('=')[1]
+    document.getElementById("main").src=("/media/" + fname[0] + '/' + fname + ".jpg");
+    document.getElementById("imgMark").textContent=fname;
 }

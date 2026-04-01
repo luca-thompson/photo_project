@@ -24,12 +24,12 @@
   font-size: 50px;
   font-family: 'Tiempos';
   align-self: flex-start;
-
-
 }
 
 #imgMark{
-    color: #252525;
-    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: solid;
+  border-width: 1.5px;
+  border-color: Black;
 }
+
 
