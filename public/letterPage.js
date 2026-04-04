@@ -4,7 +4,7 @@ async function loadImages(){
 
     document.getElementById("letterLabel").textContent = letter
 
-    const response = await fetch('/media/' + letter + '/manifest.json');
+    const response = await fetch('media.abcphotos.xyz/' + letter + '/manifest.json');
 
     if (!response.ok) {
         console.error('Failed to load manifest:', response.status, response.statusText);
