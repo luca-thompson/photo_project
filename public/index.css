@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Tiempos';
-  src: url("tiempos.woff2") format("woff2");
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -10,7 +5,6 @@
 }
 
 #letterGallery a{
-    font-family: 'Tiempos';
     text-decoration: underline;
     color: black;
     border: solid;
@@ -18,7 +12,4 @@
     border-width: 1px;
     border-color: black;
     font-size: 300px;
-
-    background-color: yellow;
-
 }

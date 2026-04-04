@@ -4,8 +4,18 @@ async function loadImages(){
 
     document.getElementById("letterLabel").textContent = letter
 
-    const response = await fetch('/media/' + letter +  '/manifest.json');
+    const response = await fetch('/media/' + letter + '/manifest.json');
+
+    if (!response.ok) {
+        console.error('Failed to load manifest:', response.status, response.statusText);
+        return;
+    }
+
     const filenames = await response.json();
+
+    console.log('/media/' + letter +  '/manifest.json');
+
+    console.log(filenames);
 
     filenames.forEach(fname => {
         const a = document.createElement('a')
@@ -19,5 +29,7 @@ async function loadImages(){
         
         a.appendChild(img)
         gallery.appendChild(a);
+
+        console.log(img.src);
     });
 }
