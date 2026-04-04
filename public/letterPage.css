@@ -1,8 +1,10 @@
-#letterLabel{
+#directory{
     font-size: 50px;
     border: solid;
     border-width: 1px;
     border-color: black;
+    color: black;
+    text-decoration: underline;
 }
 
 .gallery {

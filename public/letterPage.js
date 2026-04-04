@@ -2,14 +2,9 @@ async function loadImages(){
 
     const letter = location.href.split('=')[1]
 
-    document.getElementById("letterLabel").textContent = letter
+    document.getElementById("currentLetter").textContent = letter
 
     const response = await fetch('https://media.abcphotos.xyz/' + letter + '/manifest.json');
-
-    if (!response.ok) {
-        console.error('Failed to load manifest:', response.status, response.statusText);
-        return;
-    }
 
     const filenames = await response.json();
 
@@ -23,7 +18,7 @@ async function loadImages(){
         const img = document.createElement('img');
 
         a.href = "/imagePage.html?img=" + fname
-        a.textContent = '/media/' + letter + '/' + fname + '.jpg';
+        a.textContent = 'https://media.abcphotos.xyz/' + letter +  + '/' + fname + '.jpg';
 
         img.src = '/media/' + letter + '/' + fname + '.jpg';
         
