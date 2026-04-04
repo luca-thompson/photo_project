@@ -18,9 +18,9 @@ async function loadImages(){
         const img = document.createElement('img');
 
         a.href = "/imagePage.html?img=" + fname
-        a.textContent = 'https://media.abcphotos.xyz/' + letter +  + '/' + fname + '.jpg';
+        a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
 
-        img.src = '/media/' + letter + '/' + fname + '.jpg';
+        img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
         
         a.appendChild(img)
         gallery.appendChild(a);
