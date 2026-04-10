@@ -38,6 +38,7 @@
     text-decoration:underline;
     color: black;
     padding-bottom: 25px;
+    outline: 1px solid black;
 }
 
 .gallery img {
@@ -48,6 +49,4 @@
     filter: gray;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
-
-    outline: 1px solid black;
 }
