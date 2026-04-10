@@ -1,5 +1,4 @@
 #headerDiv {
-    overflow: hidden;
     position: fixed;
     bottom: 1vh;
     width: 99vw;
@@ -8,6 +7,7 @@
     border-color: black;
     color: black;
     font-size: 50px;
+    background-color: white;
 }
 
 .dirText{
@@ -22,16 +22,22 @@
     font-weight: normal;
 }
 
+#currentLetter{
+    text-decoration: none;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 0px;
     width: 70vw;
+    padding-bottom: 70px;
 }
 
 .gallery a{
     text-decoration:underline;
     color: black;
+    padding-bottom: 25px;
 }
 
 .gallery img {
@@ -43,7 +49,5 @@
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 
-    border:solid;
-    border-width: 2px;
-    border-color: Black;
+    outline: 1px solid black;
 }

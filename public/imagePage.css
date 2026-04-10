@@ -3,7 +3,7 @@
   justify-content: left;
   align-items: left;
 
-  height: 98vh;
+  height: 90.5vh;
   width: auto
 }
 .container img {
@@ -24,6 +24,34 @@
   border: solid;
   border-width: 1.5px;
   border-color: black;
+}
+
+#headerDiv {
+  position: fixed;
+  bottom: 1vh;
+  width: 99vw;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  color: black;
+  font-size: 50px;
+  background-color: white;
+}
+
+.dirText{
+  text-decoration: underline;
+  font-weight: normal;
+  color: black;
+}
+
+#alphabetLink{
+  font-size: 50px;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+#currentImage{
+  text-decoration: none;
 }
 
 
