@@ -8,16 +8,14 @@ async function loadImages(){
 
     const filenames = await response.json();
 
-    console.log('/media/' + letter +  '/manifest.json');
-
-    console.log(filenames);
+    filenames.sort();
 
     filenames.forEach(fname => {
         const a = document.createElement('a')
         const gallery = document.getElementById('gallery');
         const img = document.createElement('img');
 
-        a.href = "/imagePage.html?img=" + fname
+        a.href = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg'
         a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
 
         img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
@@ -28,3 +26,10 @@ async function loadImages(){
         console.log(img.src);
     });
 }
+
+window.addEventListener('wheel', (e) => {
+
+  e.preventDefault();
+  window.scrollBy({ left: e.deltaY * 2, behavior: "smooth" });
+
+}, { passive: false });
