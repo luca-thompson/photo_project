@@ -1,16 +1,25 @@
-#directory{
-    font-size: 50px;
+#headerDiv {
+    overflow: hidden;
+    position: fixed;
+    bottom: 1vh;
+    width: 99vw;
     border: solid;
     border-width: 1px;
     border-color: black;
     color: black;
-    text-decoration: none;
-    width: 100%;
+    font-size: 50px;
+}
+
+.dirText{
+    text-decoration: underline;
+    font-weight: normal;
 }
 
 #alphabetLink{
     color: black;
+    font-size: 50px;
     text-decoration: underline;
+    font-weight: normal;
 }
 
 .gallery {
