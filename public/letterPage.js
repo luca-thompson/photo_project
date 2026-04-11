@@ -4,7 +4,7 @@ async function loadImages(){
 
   document.getElementById("currentLetter").textContent = letter
 
-  const response = await fetch('https://media.abcphotos.xyz/' + letter + '/manifest.json');
+  const response = await fetch('https://media.abcphotos.xyz/' + letter + '/manifest.json', { cache: 'no-store' });;
 
   const filenames = await response.json();
 
