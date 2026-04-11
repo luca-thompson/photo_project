@@ -1,30 +1,32 @@
 async function loadImages(){
 
-    const letter = location.href.split('=')[1]
+  const letter = location.href.split('=')[1]
 
-    document.getElementById("currentLetter").textContent = letter
+  document.getElementById("currentLetter").textContent = letter
 
-    const response = await fetch('https://media.abcphotos.xyz/' + letter + '/manifest.json');
+  const response = await fetch('https://media.abcphotos.xyz/' + letter + '/manifest.json');
 
-    const filenames = await response.json();
+  const filenames = await response.json();
 
-    filenames.sort();
+  console.log(filenames);
 
-    filenames.forEach(fname => {
-        const a = document.createElement('a')
-        const gallery = document.getElementById('gallery');
-        const img = document.createElement('img');
+  filenames.sort();
 
-        a.href = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg'
-        a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
+  filenames.forEach(fname => {
+      const a = document.createElement('a')
+      const gallery = document.getElementById('gallery');
+      const img = document.createElement('img');
 
-        img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
-        
-        a.appendChild(img)
-        gallery.appendChild(a);
+      a.href = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg'
+      a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
 
-        console.log(img.src);
-    });
+      img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
+      
+      a.appendChild(img)
+      gallery.appendChild(a);
+
+      console.log(img.src);
+  });
 }
 
 window.addEventListener('wheel', (e) => {
