@@ -1,6 +1,7 @@
 #headerDiv {
     position: fixed;
-    bottom: 1vh;
+    bottom: 0;
+    bottom: env(safe-area-inset-bottom, 1vh);
     width: 99vw;
     border: solid;
     border-width: 1px;
@@ -8,6 +9,7 @@
     color: black;
     font-size: 6vh;
     background-color: white;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .dirText{
