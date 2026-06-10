@@ -34,6 +34,6 @@ window.addEventListener('load', () => {
     
     gallery.addEventListener('wheel', (e) => {
         e.preventDefault();
-        gallery.scrollBy({ left: e.deltaY * 2, behavior: "smooth" });
+        gallery.scrollBy({ left: e.deltaY * 6, behavior: "smooth" });
     }, { passive: false });
 });
