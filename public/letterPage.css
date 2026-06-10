@@ -42,6 +42,11 @@ body {
     overflow-y: hidden;
     flex-wrap: nowrap;
     height: 90vh;
+    scrollbar-width: none; /* Firefox */
+}
+
+.gallery::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 .gallery a{

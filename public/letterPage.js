@@ -29,9 +29,9 @@ async function loadImages(){
   });
 }
 
-window.addEventListener('wheel', (e) => {
+const gallery = document.getElementById('gallery');
 
-  e.preventDefault();
-  window.scrollBy({ left: e.deltaY * 2, behavior: "smooth" });
-
+gallery.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    gallery.scrollBy({ left: e.deltaY * 2, behavior: "smooth" });
 }, { passive: false });
