@@ -17,10 +17,10 @@ async function loadImages(){
       const gallery = document.getElementById('gallery');
       const img = document.createElement('img');
 
-      a.href = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg'
-      a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
+      a.href = 'https://media.abcphotos.xyz/' + letter + '/' + fname;
+      a.textContent = 'https://media.abcphotos.xyz/' + letter + '/' + fname;
 
-      img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname + '.jpg';
+      img.src = 'https://media.abcphotos.xyz/' + letter + '/' + fname;
       
       a.appendChild(img)
       gallery.appendChild(a);
