@@ -1,0 +1,13 @@
+name = "manifest-worker"
+main = "src/index.js"
+
+compatibility_date = "2026-07-22"
+
+[[r2_buckets]]
+binding = "photoBucket"
+bucket_name = "media"
+
+[[queues.consumers]]
+queue = "manifest-regen"
+max_batch_size = 10
+max_batch_timeout = 5
